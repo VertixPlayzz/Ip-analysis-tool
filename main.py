@@ -7,7 +7,7 @@ import colorama
 from colorama import Fore
 
 
-print("""prince(vertix)
+print(Fore.RED + """prince(vertix)
 ._____________                                                                 
 |   \______   \                                                                
 |   ||     ___/                                                                
@@ -77,4 +77,4 @@ def show_map(latitude, longitude):
 # Example usage:
 if __name__ == "__main__":
     ip_address = input("Enter an IP address to analyze: ")
-    analyze_ip(ip_address
+    analyze_ip(ip_address)
