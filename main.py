@@ -38,7 +38,7 @@ def analyze_ip(ip):
         response = requests.get(f"https://ipinfo.io/{ip}/json")
         if response.status_code == 200:
             data = response.json()
-            print(Fore.GRREN + "Additional Information:")
+            print(Fore.GREEN + "Additional Information:")
             print(Fore.BLUE + f"  City: {data.get('city')}")
             print(Fore.BLUE + f"  Region: {data.get('region')}")
             print(Fore.BLUE + f"  Country: {data.get('country')}")
